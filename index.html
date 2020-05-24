@@ -102,15 +102,17 @@
           </p>
           <p>
             <label for="appointment-data">ВЗРОСЛЫЕ:</label>
-            <button type="submit">-</button>
-            <button type="submit">2</button>       <!--Посмотри пож, я правильно написала форму-->
-            <button type="submit">+</button>
+            <button type="submit" aria-label="УМЕНЬШИТЬ">-</button>
+            <label for="appointment-data"></label>
+            <input id="appointment-data" type="text" name="data" placeholder="2"> <!--как-то так?-->
+            <button type="submit" aria-label="УВЕЛИЧИТЬ">+</button>
           </p>
           <p>
             <label for="appointment-data">ДЕТИ:</label>
-            <button type="submit">-</button>
-            <button type="submit">0</button>
-            <button type="submit">+</button>
+            <button type="submit" aria-label="УМЕНЬШИТЬ">-</button>
+            <label for="appointment-data"></label>
+            <input id="appointment-data" type="text" name="data" placeholder="0">
+            <button type="submit" aria-label="УВЕЛИЧИТЬ">+</button>
           </p>
           <button type="submit">ОТПРАВИТЬ</button>
         </form>
