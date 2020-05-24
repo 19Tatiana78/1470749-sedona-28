@@ -13,7 +13,7 @@
           <li><a href="blank.html">Карта штата</a></li>
           <li><a href="inner.html">Гостиницы</a></li>
         </ul>
-          <a href="#"><img src="img/logo.png" width="100" height="50" alt="ЛОГОТИП СЕДОНА"></a> <!--я правльно сейчас сделала картинку ссылкой?-->
+          <a href="#"><img src="img/logo.png" width="100" height="50" alt="ЛОГОТИП СЕДОНА"></a>
       </nav>
     </header>
 
@@ -71,8 +71,8 @@
       </section>
 
       <section>
-        <ul>                                          <!--Я правльно передалала списком?-->
-           <li>
+        <ul>
+          <li>
             <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
             <p>-№5-ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
           </li>
@@ -91,7 +91,29 @@
         <h2>ЗАИНТЕРЕСОВАЛИСЬ</h2>
         <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
         <button type="button"> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-              <!--Здесь будет форма записи-->
+        <form action="https://echo/htmlacademy.ry" method="post">
+          <p>
+            <label for="appointment-data">ДАТА ЗАЕЗДА:</label>
+            <input id="appointment-data" type="text" name="data" placeholder="24 апреля 2017">
+          </p>
+          <p>
+            <label for="appointment-data">ДАТА ВЫЕЗДА:</label>
+            <input id="appointment-data" type="text" name="data" placeholder="4 июля 2017">
+          </p>
+          <p>
+            <label for="appointment-data">ВЗРОСЛЫЕ:</label>
+            <button type="submit">-</button>
+            <button type="submit">2</button>       <!--Посмотри пож, я правильно написала форму-->
+            <button type="submit">+</button>
+          </p>
+          <p>
+            <label for="appointment-data">ДЕТИ:</label>
+            <button type="submit">-</button>
+            <button type="submit">0</button>
+            <button type="submit">+</button>
+          </p>
+          <button type="submit">ОТПРАВИТЬ</button>
+        </form>
       </section>
     </main>
 
