@@ -17,122 +17,118 @@
     </nav>
   </header>
 
-  <section>
-    <h2>ФИЛЬТР</h2>
-    <main>
-      <form action="https://echo/htmlacademy.ry" method="get">
-        <fieldset>
-          <legend>ИНФРАСТРУКТУРА</legend>
-            <ul>
-              <li>
-                <input type="checkbox" name="swimming pool" id="filter-swimming pool" checked>
-                <label for="filter-swimming pool">БАССЕЙН</label>
-              </li>
-              <li>
-                <input type="checkbox" name="parking" id="filter-parking">
-                <label for="filter-parking">ПАРКОВКА</label>
-              </li>
-              <li>
-                <input type="checkbox" name="WI-FI" id="filter-WI-FI">
-                <label for="filter-WI-FI">WI-FI</label>
-              </li>
-            </ul>
-        </fieldset>
-        <fieldset>
-          <legend>ТИП ЖИЛЬЯ</legend>
-            <ul>
-              <li>
-                <input type="checkbox" name="hotel" id="filter-hotel" checked>
-                <label for="filter-hotel">ГОСТИНИЦА</label>
-              </li>
-              <li>
-                <input type="checkbox" name="motel" id="filter-motel" checked>
-                <label for="filter-motel">МОТЕЛЬ</label>
-              </li>
-              <li>
-                <input type="checkbox" name="apartments" id="filter-apartments" checked>
-                <label for="filter-apartments">АПАРТАМЕНТЫ</label>
-              </li>
-            </ul>
-        </fieldset>
-      </form>
-    </main>
-  </section>
-
-  <section>
-    <p>
-      <label for="appointment-data">СТОИМОСТЬ В СУТКИ (Р):</label><br>
-      <input id="appointment-data" type="text" name="data" placeholder="ОТ 0 РУБ  ДО 3000">
-    </p>
-    <div style="height: 2px; background-color: red"></div>    <!--не понимаю как это правильно сделать, везде говорят о тэге hr-->
-    <button type="submit">ПОКАЗАТЬ</button>
-  </section>
-
   <main>
-    <ul>
-     <li>
-      <div>
-        <img src="img/2.2.jpg" alt="AMARA RESORT & SPA">
-      </div>
-      <div>
-        <h2>AMARA RESORT & SPA</h2>
-        <p>ГОСТИННИЦА </p>
-        <p>ОТ 4000 руб.</p>
-        <a href="blank.html">ПОДРОБНЕЕ</a>
-        <a href="blank.html">ЗАБРОНИРОВАТЬ</a>
-      </div>
-      <div>
-        <ul>
-          <li>звезда</li>
-          <li>звезда</li>
-          <li>звезда</li>
-          <li>звезда</li>
-        </ul>
-        <p>РЕЙТИНГ: 8,5</p>
-      </div>
-     </li>
+    <section>
+      <h2>ФИЛЬТР</h2>
+        <form action="https://echo/htmlacademy.ry" method="get">
+          <fieldset>
+            <legend>ИНФРАСТРУКТУРА</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="swimming pool" id="filter-swimming pool" checked>
+                  <label for="filter-swimming pool">БАССЕЙН</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="parking" id="filter-parking">
+                  <label for="filter-parking">ПАРКОВКА</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="WI-FI" id="filter-WI-FI">
+                  <label for="filter-WI-FI">WI-FI</label>
+                </li>
+              </ul>
+          </fieldset>
+          <fieldset>
+            <legend>ТИП ЖИЛЬЯ</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                  <label for="filter-hotel">ГОСТИНИЦА</label>
+                </li>
+                <li>
+                   <input type="checkbox" name="motel" id="filter-motel" checked>
+                  <label for="filter-motel">МОТЕЛЬ</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="apartments" id="filter-apartments" checked>
+                  <label for="filter-apartments">АПАРТАМЕНТЫ</label>
+                </li>
+              </ul>
+          </fieldset>
+          <p>
+            <label for="appointment-data">СТОИМОСТЬ В СУТКИ (Р):</label><br>
+            <input id="appointment-data" type="text" name="data" placeholder="ОТ 0 РУБ  ДО 3000">
+          </p>
+          <button type="submit">ПОКАЗАТЬ</button>
+        </form>
+    </section>
 
-     <li>
-      <div>
-        <img src="img/2.3.jpg" alt="DESERT QUAIL INN">
-      </div>
-      <div>
-        <h2>DESERT QUAIL INN</h2>
-        <p>МОТЕЛЬ </p>
-        <p>ОТ 3000 руб.</p>
-        <a href="blank.html">ПОДРОБНЕЕ</a>
-        <a href="blank.html">ЗАБРОНИРОВАТЬ</a>
-      </div>
-      <div>
-        <ul>
-          <li>звезда</li>
-          <li>звезда</li>
-          <li>звезда</li>
-        </ul>
-       <p>РЕЙТИНГ: 8,9</p>
-      </div>
-     </li>
+    <section>
+      <ul>
+       <li>
+        <div>
+          <img src="img/2.2.jpg" alt="AMARA RESORT & SPA">
+        </div>
+        <div>
+          <h2>AMARA RESORT & SPA</h2>
+          <p>ГОСТИННИЦА </p>
+          <p>ОТ 4000 руб.</p>
+          <a href="blank.html">ПОДРОБНЕЕ</a>
+          <a href="blank.html">ЗАБРОНИРОВАТЬ</a>
+        </div>
+        <div>
+          <ul>
+            <li>звезда</li>
+            <li>звезда</li>
+            <li>звезда</li>
+            <li>звезда</li>
+          </ul>
+          <p>РЕЙТИНГ: 8,5</p>
+        </div>
+       </li>
 
-     <li>
-      <div>
-        <img src="img/2.4.jpg" alt="VILLAS AT POCO DIABLO">
-      </div>
-      <div>
-        <h2>VILLAS AT POCO DIABLO</h2>
-        <p>АПАРТАМЕНТЫ </p>
-        <p>ОТ 2000 руб.</p>
-        <a href="blank.html">ПОДРОБНЕЕ</a>
-        <a href="blank.html">ЗАБРОНИРОВАТЬ</a>
-      </div>
-      <div>
-        <ul>
-          <li>звезда</li>
-          <li>звезда</li>
-        </ul>
-       <p>РЕЙТИНГ: 9,2</p>
-      </div>
-     </li>
+       <li>
+        <div>
+          <img src="img/2.3.jpg" alt="DESERT QUAIL INN">
+        </div>
+        <div>
+          <h2>DESERT QUAIL INN</h2>
+          <p>МОТЕЛЬ </p>
+          <p>ОТ 3000 руб.</p>
+          <a href="blank.html">ПОДРОБНЕЕ</a>
+          <a href="blank.html">ЗАБРОНИРОВАТЬ</a>
+        </div>
+        <div>
+          <ul>
+            <li>звезда</li>
+            <li>звезда</li>
+            <li>звезда</li>
+          </ul>
+           <p>РЕЙТИНГ: 8,9</p>
+        </div>
+       </li>
+
+       <li>
+        <div>
+          <img src="img/2.4.jpg" alt="VILLAS AT POCO DIABLO">
+        </div>
+        <div>
+          <h2>VILLAS AT POCO DIABLO</h2>
+          <p>АПАРТАМЕНТЫ </p>
+          <p>ОТ 2000 руб.</p>
+          <a href="blank.html">ПОДРОБНЕЕ</a>
+          <a href="blank.html">ЗАБРОНИРОВАТЬ</a>
+        </div>
+        <div>
+          <ul>
+            <li>звезда</li>
+            <li>звезда</li>
+          </ul>
+         <p>РЕЙТИНГ: 9,2</p>
+        </div>
+       </li>
     </ul>
+   </section>
   </main>
 
 
