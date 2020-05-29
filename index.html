@@ -1,142 +1,163 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
-          <li><a href="inner.html">Гостиницы</a></li>
-        </ul>
-          <a href="#"><img src="img/logo.png" width="100" height="50" alt="ЛОГОТИП СЕДОНА"></a>
+
+  <body class="page-body">
+
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/logo.png" width="100" height="50" alt="ЛОГОТИП СЕДОНА">
+        </a>
+         <div class="main-navigation-wrapper">
+         <div class="container">
+            <ul class="site-navigation">
+              <li><a href="blank.html">Информация</a></li>
+              <li><a href="blank.html">Фото и видео</a></li>
+              <li><a href="blank.html">Карта штата</a></li>
+              <li><a href="inner.html">Гостиницы</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
 
-    <main>
-       <h1>SEDONA</h1> <!--будет скрыто-->
-      <div>
-        <img src="img/1.jpg" alt="GRAND CANYON">
-        <img src="img/welcome.png" alt="WELCOM SEDONA">
+    <main class="title">
+       <h1 class="visually-hidden">SEDONA</h1>
+      <div class="title-img">
+        <img src="img/welcome.png" width="456" height="350" alt="WELCOM SEDONA">
       </div>
 
-      <section>
-        <h3>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h3>
-        <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+      <section class="title-text">
+        <h3 class="primary-title title-caption">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+        <p class="primary-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
 
-      <section>
-        <div>
-          <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
-          <p>-№1-СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ!</p>
+      <section class="description">
+        <div class="description-town">
+          <h3 class="description-title primary-title">Настоящий городок</h3>
+          <p class="description-number">-№1-</p>
+          <p class="description-text">Седона не атракцион для туристов, там течет своя жизнь!</p>
         </div>
-        <div>
-          <img src="img/2.jpg" alt="НАСТОЯЩИЙ ГОРОДОК">
+        <div class="description-img">
+          <img src="img/2.jpg" width="800" height="256" alt="НАСТОЯЩИЙ ГОРОДОК">
         </div>
       </section>
 
-      <section>
-        <ul>
-          <li>
-             <img src="img/4.jpg" alt="ЖИЛЬЕ">
-            <h3>ЖИЛЬЕ</h3>
-            <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+      <section class="recommendations">
+        <ul class="recommendations-list">
+          <li class="recommendations-item">
+            <img src="img/4.jpg" width="74" height="72" alt="ЖИЛЬЕ">
+            <h3>Жилье</h3>
+            <p>Рекомендуем пожить в настоящем отеле, все как в кино!</p>
           </li>
-          <li>
-             <img src="img/5.jpg" alt="ЕДА">
-            <h3>ЕДА</h3>
-            <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ ОАЗОЧАРУЕТЕСЬ!</p>
+          <li class="recommendations-item">
+            <img src="img/5.jpg" width="74" height="72" alt="ЕДА">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li>
-            <img src="img/6.jpg" alt="СУВЕНИРЫ">
-            <h3>СУВЕНИРЫ</h3>
-            <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТОНОГО ПРОИЗВОДСТВА!</p>
+          <li class="recommendations-item">
+            <img src="img/6.jpg" width="74" height="72" alt="СУВЕНИРЫ">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
       </section>
 
-      <section>
-        <div>
-          <img src="img/3.jpg" alt="МОСТ ДЬЯВОЛА">
+      <section class="description">
+        <div class="description-img">
+          <img src="img/3.jpg" width="800" height="256" alt="МОСТ ДЬЯВОЛА">
         </div>
-        <div>
-          <h3>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
-          <p>-№2-ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+        <div class="description-bridge">
+          <h3 class="description-title">Там есть мост дьявола</h3>
+          <p class="description-number">-№2-</p>
+          <p class="description-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
       </section>
 
-      <section>
-        <ul>
-          <li>
-            <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-            <p>-№5-ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+      <section class="features">
+        <ul class="features-list">
+          <li class="feature-item">
+            <h3>Небольшая площадь</h3>
+            <p>-№5-</p>
+            <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li>
-            <h3>КРАСИВАЯ ДОРОГА</h3>
-            <p>№6-ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО</p>
+          <li class="feature-item">
+            <h3>Красивая дорога</h3>
+            <p>-№6-</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
           </li>
-          <li>
-            <h3>МАЛО ТУРИСТОВ</h3>
-            <p>-№7-БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+          <li class="feature-item">
+            <h3>Мало туристов</h3>
+            <p>-№7-</p>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
       </section>
 
-      <section>
-        <h2>ЗАИНТЕРЕСОВАЛИСЬ</h2>
-        <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-        <a href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
-        <form action="https://echo/htmlacademy.ry" method="post">
-          <p>
-            <label for="appointment-data">ДАТА ЗАЕЗДА:</label>
+      <section class="appointment">
+        <h2>Заинтересовались</h2>
+        <p class="appointment-info">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a href="#">Поиск гостиницы в Седоне</a>
+        <form class="appointment-form" action="https://echo/htmlacademy.ry" method="post">
+          <p class="appointment-item">
+            <label for="appointment-data">Дата заезда:</label>
             <input id="appointment-data" type="text" name="data" placeholder="24 апреля 2017">
-            <button type="button">КАЛЕНДАРЬ</button>
+            <button class="button" type="button">Календарь</button>
           </p>
-          <p>
-            <label for="appointment-data">ДАТА ВЫЕЗДА:</label>
+          <p class="appointment-item">
+            <label for="appointment-data">Дата выезда:</label>
             <input id="appointment-data" type="text" name="data" placeholder="4 июля 2017">
-            <button type="button">КАЛЕНДАРЬ</button>
+            <button class="button" type="button">Календарь</button>
           </p>
-          <p>
-            <label for="appointment-data">ВЗРОСЛЫЕ:</label>
-            <button type="submit" aria-label="УМЕНЬШИТЬ">-</button>
+          <p class="appointment-item">
+            <label for="appointment-data">Взрослые:</label>
+            <button class="button" type="submit" aria-label="УМЕНЬШИТЬ">-</button>
             <input id="appointment-data" type="text" name="data" placeholder="2">
-            <button type="submit" aria-label="УВЕЛИЧИТЬ">+</button>
+            <button class="button" type="submit" aria-label="УВЕЛИЧИТЬ">+</button>
           </p>
-          <p>
-            <label for="appointment-data">ДЕТИ:</label>
-            <button type="submit" aria-label="УМЕНЬШИТЬ">-</button>
+          <p class="appointment-item">
+            <label for="appointment-data">Дети:</label>
+            <button class="button" type="submit" aria-label="УМЕНЬШИТЬ">-</button>
             <input id="appointment-data" type="text" name="data" placeholder="0">
-            <button type="submit" aria-label="УВЕЛИЧИТЬ">+</button>
+            <button class="button" type="submit" aria-label="УВЕЛИЧИТЬ">+</button>
           </p>
-          <button type="submit">ОТПРАВИТЬ</button>
+          <button class="button" type="submit">Отправить</button>
         </form>
       </section>
     </main>
 
 
-    <footer>
-      <section>
-        <h2>КОНТАКТЫ</h2>
+    <footer class="page-footer main-footer">
+      <section class="container">
+        <h2>Контакты</h2>
         <p>#VISITSEDONA<br>
-         <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+         <a href="tel:+74956660166">Тел: +7(495) 666-01-66</a>
       </section>
 
-      <section>
+      <section class="footer-social">
         <ul>
           <li>
-            <a href="#"><img src="img/twitter.png" alt="TWITTER"></a>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Twitter</span>
+            <img src="img/twitter.png" alt="TWITTER"></a>
           </li>
           <li>
-            <a href="#"><img src="img/fb-icon.png" alt="FACEBOOK"></a>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Facebook</span>
+            <img src="img/fb-icon.png" alt="FACEBOOK"></a>
           </li>
           <li>
-            <a href="#"><img src="img/youtube.png" alt="YOUTUBE"></a>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Youtube</span>
+            <img src="img/youtube.png" alt="YOUTUBE"></a>
           </li>
         </ul>
           <p>WEBSITE BY</p>
@@ -145,4 +166,8 @@
     </footer>
   </body>
 </html>
+
+
+
+
 
