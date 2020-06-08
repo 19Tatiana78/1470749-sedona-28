@@ -36,16 +36,61 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1 fr min-content;
+  align-content: start;
+}
+
+.main-header {
+  margin-bottom: 70px;
+  outline-offset: -5px;
+}
+
 .main-navigation {
+  display: fiex;
+  flex-direction: column;
+  align-items: center;
   color: var(--basic-black);
   background-color: transparent;
 }
 
 .main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
   background-color: var(--basic-white);
 }
 
+.main-header-logo {
+  order: 2;
+  width: 138px;
+  height: 70px;
+  outline-offset: -5px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation-wrapper .container{
+  display: flex;
+  justify-content: space-between;
+}
+
 .site-navigation {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  min-height: 70px;
+  list-style: none;
+  outline-offset: -5px;
   list-style: none;
 }
 
@@ -57,14 +102,6 @@ img {
 
 .site-navigation a:hover,
 .site-navigation a:focus,
-
-.main-logo {
-  position: absolute;
-  width: 138px;
-  height: 70px;
-  left: 571px;
-  top: 0px;
-}
 
 .title {
   background-color: var(--basic-blue);
@@ -130,17 +167,31 @@ img {
   height: 256px;
 }
 
+.recommendations {
+  margin-bottom: 80px;
+}
+
 .recommendations-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .recommendations-item {
   text-align: center;
+  outline-offset: -5px;
 }
 
 .recommendations-item h3 {
   font-size: 21px;
   line-height: 21px;
+}
+
+.recommendations-item p {
+  margin: 0 10px;
 }
 
 .description {
@@ -174,12 +225,14 @@ img {
 }
 
 .features{
-  background: var(--basic-gray);
+  margin-bottom: 80px;
 }
 
 .features-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
   list-style: none;
-  text-align: center;
 }
 
 .features-item {
@@ -189,6 +242,10 @@ img {
 .features-item h3 {
   font-size: 21px;
   line-height: 21px;
+}
+
+.features-item p {
+  margin: 0 10px;
 }
 
 .appointment{
@@ -222,10 +279,26 @@ img {
 }
 
 .main-footer {
+  padding: 60px 0;
+  margin-top: 65px;
   color: var(--basic-black);
   background-color: var(--basic-white);
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.main-footer .conteiner {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.footer-contacts {
+  margin: 0;
+  width: 320px;
+}
+
+.footer-contacts p {
+  margin: 0;
 }
 
 .footer-contacts a {
@@ -233,10 +306,14 @@ img {
 }
 
 .footer-social {
+  width: 145px;
+  jystify-self:center;
   text-align: center;
 }
 
 .footer-social ul {
+  width: 141px;
+  margin: 0 auto;
   list-style: none;
 }
 
