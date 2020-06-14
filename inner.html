@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Внутренняя страница</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -24,7 +24,7 @@
     <section>
       <h2>Фильтр</h2>
         <form action="https://echo/htmlacademy.ry" method="get">
-          <fieldset>
+          <fieldset class="filter-item">
             <legend>Инфраструктура</legend>
               <ul>
                 <li>
@@ -41,7 +41,7 @@
                 </li>
               </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-item">
             <legend>Тип жилья</legend>
               <ul>
                 <li>
@@ -58,11 +58,23 @@
                 </li>
               </ul>
           </fieldset>
-          <p>
-            <label for="appointment-data">Стоимость в сутки (р):</label><br>
-            <input id="appointment-data" type="text" name="data" placeholder="ОТ 0 РУБ  ДО 3000">
-          </p>
-          <button type="submit">Показать</button>
+          <fieldset class="filter-item">
+            <legend>Стоимость в сутки (р):</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от<input type="number" name="min-price" value="0" step="100"></label>
+                <label class="max-price">до<input type="number" name="max-price" value="15000"></label>
+              </div>
+            </div>
+            <button type="submit">Показать</button>
+          </fieldset>  
         </form>
     </section>
 
